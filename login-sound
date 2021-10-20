@@ -1,2 +1,6 @@
 #!/bin/bash
-/usr/bin/ogg123 /usr/share/sounds/login/startup.ogg > /dev/null 2>&1 &
+if [ ! -f "~/.config/login-sound.conf" ]; then
+  cp /etc/login-sound.conf ~/.config/login-sound.conf
+fi
+source ~/.config/login-sound.conf
+/usr/bin/ogg123 /usr/share/sounds/login/$LOGIN_SOUND.ogg > /dev/null 2>&1 &

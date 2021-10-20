@@ -8,7 +8,7 @@ mkdir -p /usr/share/sounds/login
 echo "Copying files..."
 cp login-sound /usr/local/bin/
 cp startup.ogg /usr/share/sounds/login/
-
+cp login-sound.conf /etc/
 echo "Ensuring file is executable"
 chmod +x /usr/local/bin/login-sound
 echo "-------------"
