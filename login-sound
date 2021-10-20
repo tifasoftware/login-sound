@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ ! -f "~/.config/login-sound.conf" ]; then
+if [ ! -f ~/.config/login-sound.conf ]; then
   cp /etc/login-sound.conf ~/.config/login-sound.conf
 fi
 source ~/.config/login-sound.conf
