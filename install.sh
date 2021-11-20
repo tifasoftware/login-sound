@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 echo "Installing login-sound"
 echo "By Tifa Software"
 echo "-------------"
